@@ -1,0 +1,165 @@
+.game-board {
+  position: relative;
+  width: 360px;
+  height: 720px;
+
+  background: #ffffff;
+  left: calc(50% - 360px / 2 + 0.5px);
+}
+
+@media screen and (max-width: 360px) and (max-height: 720px) {
+  .game-board {
+    left: 0;
+  }
+}
+
+.vector {
+  height: 10.74px;
+  width: 18.77px;
+  position: absolute;
+  left: 22.5px;
+  /* right: 29.21%; */
+  top: 18.62px;
+  /* bottom: 10.89%; */
+
+  /* Dark Grey */
+
+  /* background: #333333; */
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 8px;
+  /* position: absolute;
+  top: 72px; */
+}
+
+.game-heading {
+  position: absolute;
+  width: 255px;
+  height: 32px;
+  left: 24px;
+  top: 72px;
+
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  /* identical to box height, or 114% */
+
+  letter-spacing: -0.05em;
+
+  /* Dark Grey */
+
+  color: #333333;
+}
+
+.piece-text {
+  position: absolute;
+  width: 73px;
+  height: 18px;
+  left: 24px;
+  top: 112px;
+
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  color: #333333;
+}
+
+.piece-img {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 24px;
+  top: 138px;
+
+  background: #ffffff;
+}
+
+.move-button {
+  position: absolute;
+  height: 56px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+
+  /* Yellow */
+
+  background: #f2c94c;
+  /* Drop Shadow 1 */
+
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+}
+
+.button-text {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.status-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  /* width: 327.88px; */
+  height: 47.29px;
+  left: 16px;
+  top: 210px;
+  right: 16px;
+
+  background: #ffe79e;
+}
+.status-text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.9159px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #212121;
+}
+
+.board {
+  /* width: 600px; */
+  position: absolute;
+  height: 335px;
+  left: 16px;
+  right: 16px;
+  top: 257px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #fff;
+  /* border: 6px solid #FFE79E;; */
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.box
+{
+  border: calc(5.91px/2 + 0.5px) solid #FFE79E;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

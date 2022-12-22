@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Board</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bilbo"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Work Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Epilogue"
+    />
+    <link rel="stylesheet" href="css/gameBoard.css" />
+  </head>
+  <body>
+    <div class="game-board">
+      <a href="home.html">
+        <div class="vector">
+          <svg
+            width="11"
+            height="20"
+            viewBox="0 0 11 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.62 0.990059C10.13 0.500059 9.34 0.500059 8.85 0.990059L0.539998 9.30006C0.149998 9.69006 0.149998 10.3201 0.539998 10.7101L8.85 19.0201C9.34 19.5101 10.13 19.5101 10.62 19.0201C11.11 18.5301 11.11 17.7401 10.62 17.2501L3.38 10.0001L10.63 2.75006C11.11 2.27006 11.11 1.47006 10.62 0.990059Z"
+              fill="#333333"
+            />
+          </svg>
+        </div>
+      </a>
+      <div class="board-container">
+        <div class="game-heading">Game with Tanmay</div>
+        <div class="piece-text">Your piece</div>
+        <div class="piece-img">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="64" height="64" fill="white" />
+            <rect
+              width="9.86491"
+              height="44.3921"
+              rx="4.93245"
+              transform="matrix(0.706472 0.707741 -0.706472 0.707741 44.1619 12.8002)"
+              fill="#2C8DFF"
+            />
+            <rect
+              width="9.8649"
+              height="44.3921"
+              rx="4.93245"
+              transform="matrix(0.706473 -0.70774 0.706473 0.70774 12.8689 19.7819)"
+              fill="#2C8DFF"
+            />
+          </svg>
+        </div>
+        <div class="status-bar">
+          <span class="status-text">Your move</span>
+        </div>
+        <div class="board">
+          <div class="box" style="border-left: 0">
+            <svg
+              width="106"
+              height="106"
+              viewBox="0 0 106 106"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="105.09" height="105.09" fill="white" />
+              <rect
+                width="16.1985"
+                height="72.8932"
+                rx="8.09924"
+                transform="matrix(0.706472 0.707741 -0.706472 0.707741 72.5152 21.0184)"
+                fill="#2C8DFF"
+              />
+              <rect
+                width="16.1985"
+                height="72.8932"
+                rx="8.09924"
+                transform="matrix(0.706472 -0.707741 0.706472 0.707741 21.131 32.4824)"
+                fill="#2C8DFF"
+              />
+            </svg>
+          </div>
+          <div class="box">
+            <svg
+              width="105"
+              height="105"
+              viewBox="0 0 105 105"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="105" height="105" fill="white" />
+              <circle
+                cx="52.5"
+                cy="52.5"
+                r="23.625"
+                stroke="#FF4F4F"
+                stroke-width="15.75"
+              />
+            </svg>
+          </div>
+          <div class="box" style="border-right: 0">O</div>
+          <div class="box" style="border-left: 0">O</div>
+          <div class="box">X</div>
+          <div class="box" style="border-right: 0">O</div>
+          <div class="box" style="border-left: 0; border-bottom: 0">O</div>
+          <div class="box" style="border-bottom: 0">X</div>
+          <div class="box" style="border-right: 0; border-bottom: 0">X</div>
+        </div>
+      </div>
+      <button type="submit" class="move-button">
+        <span class="button-text">Submit!</span>
+      </button>
+    </div>
+  </body>
+</html>
